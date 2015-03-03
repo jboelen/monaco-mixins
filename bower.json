@@ -1,0 +1,27 @@
+{
+  "name": "monaco-mixins",
+  "description": "todo",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jboelen/monaco-mixins",
+  "authors": [
+    "James Boelen"
+  ],
+  "main": "monaco-mixins.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "monaco",
+    "mixins"
+  ],
+  "license": "todo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,12 +1,3 @@
-(function(root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    define(['lodash', 'backbone', 'monaco'], factory);
-  } else if (typeof exports === 'object') {
-    module.exports = factory(require('lodash'), require('backbone'), require('monaco'));
-  } else {
-    root.Monaco = factory(root._, root.Backbone, root.Monaco);
-  }
-}(this, function(_, Backbone, Monaco) {
 var Mixin = function ( mixin ) {
   // Resulting mixin that will apply the additional functions
   // Usage: app.mixins.MyMixin( class );
@@ -76,6 +67,3 @@ Monaco.Application.prototype.mixin = function ( desinationClass ) {
     this.mixins[ arguments[ index ] ]( desinationClass );
   }
 };
-
-return Monaco;
-}));
