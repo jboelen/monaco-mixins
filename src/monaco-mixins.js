@@ -39,6 +39,7 @@ var Mixin = function ( mixin ) {
   // Allows Monaco to add the mixins to the appropriate application object
   result.prototype.namespace = 'mixins';
   result.namespace = 'mixins';
+  result.extend = function( newMixin ) { return Mixin.create( _.extend( newMixin, mixin ) ); };
 
   return result;
 };
